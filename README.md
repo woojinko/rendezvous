@@ -26,7 +26,7 @@ https://rendezvous-api.herokuapp.com/
 
 ## Testing with Postman
 
-Load both collections into [Postman]() and run Rendezvous 1 and then 2. The requests in Rendezvous 1 are not idempotent so you must only run Rendezvous 1 once.
+Load both collections into [Postman]() and run Rendezvous 1 and then 2. The requests in Rendezvous 1 are not idempotent so you must only run Rendezvous 1 once. Make absolutely sure to change the code field before running.
 
 ## Built With
 
