@@ -8,9 +8,9 @@ class User(Mixin, db.Model):
     __tablename__ = "user"
 
     id = db.Column(db.Integer, unique=True, primary_key=True)
-    lat = db.Column(db.Float)
-    lon = db.Column(db.Float)
-    code = db.Column(db.Integer)
+    lat = db.Column(db.Float, nullable=False)
+    lon = db.Column(db.Float, nullable=False)
+    code = db.Column(db.Integer, nullable=False)
 
     def __init__(self, lat, lon, code):
         db.Model.__init__(self, lat=lat, lon=lon, code=code)

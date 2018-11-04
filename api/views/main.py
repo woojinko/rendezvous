@@ -18,8 +18,7 @@ def create_user():
 
     new_user = User(lat, lon, code)
     new_user.add_user()
-    print(str(new_user.id))
-    return create_response(data={'user_id': str(new_user.id)}, status=201)
+    return create_response(data={'user_id': int(new_user.id)}, status=201)
 
 # called to initiate rendezvous calculation
 # returns the best location for meetup
@@ -29,7 +28,7 @@ def rendezvous():
     code = request.args.get('code')
     dest = Destination.query.filter(Destination.code==code).all()
     if not dest:
-        users = User.query.filter(User.code==code)
+        users = User.query.filter(User.code==code).all()
         lats = [user.lat for user in users]
         lons = [user.lon for user in users]
 
