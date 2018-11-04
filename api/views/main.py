@@ -8,6 +8,10 @@ main = Blueprint("main", __name__)  # initialize blueprint
 
 gmaps = Client(key=os.environ.get('API_KEY'))
 
+@main.route("/", methods=["GET"])
+def index():
+    return "<h1>FORBIDDEN nah just kidding...Enjoy!</h1>"
+
 # called to create a new user and join a party_size
 # params: code, lat, lon
 @main.route("/create_user", methods=['POST'])
