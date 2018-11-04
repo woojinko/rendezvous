@@ -26,7 +26,13 @@ https://rendezvous-api.herokuapp.com/
 
 ## Testing with Postman
 
-Load both collections into [Postman]() and run Rendezvous 1 and then 2. The requests in Rendezvous 1 are not idempotent so you must only run Rendezvous 1 once. Make absolutely sure to change the code field before running.
+Rendezvous 1 tests create_user and rendezvous and Rendezvous 2 tests the remaining endpoints.
+
+Rendezvous 1:
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/56c200022930b337b6b9)
+
+Rendezvous 2:
+[![Rendezvous 2](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/dbbf472e9a17d0e46eb9)
 
 ## Built With
 
