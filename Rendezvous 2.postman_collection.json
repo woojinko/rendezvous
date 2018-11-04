@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "5786cf8e-680a-4d64-bc96-11ca341340a6",
+		"name": "Rendezvous 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/party_size?code=654321",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"party_size"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/get_dest?code=654321",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"get_dest"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "locate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/locate_party?code=654321",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"locate_party"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

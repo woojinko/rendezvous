@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "039579d2-8a7b-4a97-b398-79b962780506",
+		"name": "Rendezvous 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/create_user?code=654321&lat=37.871248&lon=-122.251476",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"create_user"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						},
+						{
+							"key": "lat",
+							"value": "37.871248"
+						},
+						{
+							"key": "lon",
+							"value": "-122.251476"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/create_user?code=654321&lat=37.866913&lon=-122.257888",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"create_user"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						},
+						{
+							"key": "lat",
+							"value": "37.866913"
+						},
+						{
+							"key": "lon",
+							"value": "-122.257888"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/create_user?code=654321&lat=37.867311&lon=-122.267474",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"create_user"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						},
+						{
+							"key": "lat",
+							"value": "37.867311"
+						},
+						{
+							"key": "lon",
+							"value": "-122.267474"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/create_user?code=654321&lat=37.859199&lon=-122.267851",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"create_user"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						},
+						{
+							"key": "lat",
+							"value": "37.859199"
+						},
+						{
+							"key": "lon",
+							"value": "-122.267851"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/create_user?code=654321&lat=37.852240&lon=-122.260377",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"create_user"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						},
+						{
+							"key": "lat",
+							"value": "37.852240"
+						},
+						{
+							"key": "lon",
+							"value": "-122.260377"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rendezvous",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://rendezvous-api.herokuapp.com/rendezvous?code=654321",
+					"protocol": "https",
+					"host": [
+						"rendezvous-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"rendezvous"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "654321"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
