@@ -12,12 +12,21 @@ https://rendezvous-api.herokuapp.com/
   * param: code (int)
     * The user generated 6-digit code for their rendezvous group
   * param: lat (float)
-    * The user's latitude (float
+    * The user's latitude
   * param: lon (float)
     * The user's longitude
-* GET rendezvous
+* GET rendezvous, party_size, get_dest
   * param: code (int)
-    * The 6-digit code used to identify the user's group 
+    * The 6-digit code used to identify the user's group
+* GET locate_party
+  * param: code (int)
+    * The 6-digit code used to identify the user's group
+  * param: user_id (int)
+    * The id of the user who sent the request
+
+## Testing with Postman
+
+Load both collections into [Postman]() and run Rendezvous 1 and then 2. The requests in Rendezvous 1 are not idempotent so you must only run Rendezvous 1 once.
 
 ## Built With
 
@@ -38,6 +47,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* @tko22
+* All members of the team
 * Inspiration
 * Cal Hacks 5.0 sponsors and mentors
