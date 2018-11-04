@@ -12,8 +12,8 @@ core_logger = logging.getLogger("core")
 
 
 class Mixin:
-    """Utility Base Class for SQLAlchemy Models. 
-    
+    """Utility Base Class for SQLAlchemy Models.
+
     Adds `to_dict()` to easily serialize objects to dictionaries.
     """
 
@@ -28,7 +28,7 @@ def create_response(
     data: dict = None, status: int = 200, message: str = ""
 ) -> Tuple[Response, int]:
     """Wraps response in a consistent format throughout the API.
-    
+
     Format inspired by https://medium.com/@shazow/how-i-design-json-api-responses-71900f00f2db
     Modifications included:
     - make success a boolean since there's only 2 values
@@ -52,7 +52,7 @@ def create_response(
 
 def serialize_list(items: List) -> List:
     """Serializes a list of SQLAlchemy Objects, exposing their attributes.
-    
+
     :param items - List of Objects that inherit from Mixin
     :returns List of dictionaries
     """

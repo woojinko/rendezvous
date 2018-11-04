@@ -2,8 +2,7 @@
 # initializing db in api.models.base instead of in api.__init__.py
 # to prevent circular dependencies
 from .User import User
+from .Destination import Destination
 from .base import db
 
-__all__ = ["User", "db"]
-
-# You must import all of the new Models you create to this page
+__all__ = ["User", "Destination", "db"]
