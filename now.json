@@ -1,8 +1,0 @@
-{
-  "name": "Rendezvous",
-  "public": true,
-  "type": "docker",
-  "features": {
-    "cloud": "v2"
-  }
-}
