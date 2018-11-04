@@ -18,8 +18,8 @@ def create_user():
 
     new_user = User(lat, lon, code)
     new_user.add_user()
-
-    return create_response(data={'user_id': new_user.id}, status=201)
+    print(str(new_user.id))
+    return create_response(data={'user_id': str(new_user.id)}, status=201)
 
 # called to initiate rendezvous calculation
 # returns the best location for meetup
@@ -27,9 +27,8 @@ def create_user():
 @main.route("/rendezvous", methods=["GET"])
 def rendezvous():
     code = request.args.get('code')
-    dest = Destination.query.filter(Destination.code==code)
-    if !dest:
-
+    dest = Destination.query.filter(Destination.code==code).all()
+    if not dest:
         users = User.query.filter(User.code==code)
         lats = [user.lat for user in users]
         lons = [user.lon for user in users]
@@ -57,7 +56,7 @@ def rendezvous():
 @main.route("/party_size", methods=["GET"])
 def party_size():
     code = request.args.get('code')
-    users = User.query.filter(User.code==code)
+    users = User.query.filter(User.code==code).all()
 
     size = len(users)
 
@@ -69,7 +68,7 @@ def party_size():
 @main.route("/get_dest", methods=["GET"])
 def get_dest():
     code = request.args.get('code')
-    dest = Destination.query.filter(Destination.code==code)
+    dest = Destination.query.filter(Destination.code==code).all()
     length = len(dest)
     if length == 0:
         return create_response(status=204)
@@ -82,7 +81,7 @@ def get_dest():
 # returns the location of all other party members
 # used to update live location on every Client
 # params: code, user_id
-@main.route("/locate_party", method=["GET"])
+@main.route("/locate_party", methods=["GET"])
 def locate_party():
     code = request.args.get('code')
     user_id = request.args.get('user_id')
