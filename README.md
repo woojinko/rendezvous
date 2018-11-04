@@ -2,16 +2,20 @@
 
 API for Rendezvous app built for Cal Hacks 5.0 (2018).
 
+## Live Deploy
+
+https://rendezvous-api.herokuapp.com/
+
 ## Endpoints
 
-* create_user
+* POST create_user
   * param: code (int)
     * The user generated 6-digit code for their rendezvous group
   * param: lat (float)
     * The user's latitude (float
   * param: lon (float)
     * The user's longitude
-* rendezvous
+* GET rendezvous
   * param: code (int)
     * The 6-digit code used to identify the user's group 
 
