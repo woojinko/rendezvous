@@ -11,6 +11,10 @@ API for Rendezvous app built for Cal Hacks 5.0 (2018).
 
 https://rendezvous-api.herokuapp.com/
 
+## iOS App Repo
+
+https://github.com/Huw-man/Flaker
+
 ## Endpoints
 
 * POST create_user
